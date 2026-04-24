@@ -1,10 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>MelOS</title>
+
+<style>
+body {
+    margin:0;
+    font-family:Arial;
+    background:#020617;
+    color:white;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    border-bottom:1px solid #1e293b;
+}
+
+header button {
+    background:#38bdf8;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.hero {
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1 {
+    font-size:40px;
+}
+
+.hero p {
+    color:#94a3b8;
+}
+
+.btn {
+    background:#38bdf8;
+    padding:12px 20px;
+    border-radius:10px;
+    margin-top:20px;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.section {
+    padding:60px 20px;
+    text-align:center;
+}
+
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card {
+    background:#1e293b;
+    margin:10px;
+    padding:20px;
+    border-radius:15px;
+    width:250px;
+}
+
+.download {
+    padding:60px 20px;
+    text-align:center;
+}
+
+footer {
+    padding:20px;
+    text-align:center;
+    border-top:1px solid #1e293b;
+    color:#94a3b8;
+}
+</style>
+
 </head>
-<body style="background:black;color:white;text-align:center;">
-<h1>🚀 MelOS läuft!</h1>
-<p>Website funktioniert jetzt</p>
+
+<body>
+
+<header>
+    <h2>🚀 MelOS</h2>
+</header>
+
+<div class="hero">
+    <h1>Dein eigenes System</h1>
+    <p>MelOS kombiniert Apps, Server und Lizenzsystem</p>
+</div>
+
+<div class="section">
+    <h2>✨ Features</h2>
+    <div class="cards">
+        <div class="card">🔐 Lizenzsystem</div>
+        <div class="card">📱 Mobile Apps</div>
+        <div class="card">🌐 Server Backend</div>
+    </div>
+</div>
+
+<div class="download">
+    <h2>📥 Download</h2>
+
+    <a href="melos_admin.apk">
+        <button>Admin App</button>
+    </a>
+
+    <a href="melos_user.apk">
+        <button>User App</button>
+    </a>
+</div>
+
+<footer>
+    © 2026 MelOS
+</footer>
+
 </body>
 </html>
