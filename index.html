@@ -12,6 +12,7 @@ body {
     color:white;
 }
 
+/* HEADER */
 header {
     display:flex;
     justify-content:space-between;
@@ -19,21 +20,20 @@ header {
     border-bottom:1px solid #1e293b;
 }
 
-header button {
-    background:#38bdf8;
-    border:none;
-    padding:10px 15px;
-    border-radius:8px;
-    cursor:pointer;
+header a {
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
 }
 
+/* HERO */
 .hero {
     text-align:center;
     padding:100px 20px;
 }
 
 .hero h1 {
-    font-size:40px;
+    font-size:42px;
 }
 
 .hero p {
@@ -46,9 +46,9 @@ header button {
     border-radius:10px;
     margin-top:20px;
     display:inline-block;
-    cursor:pointer;
 }
 
+/* FEATURES */
 .section {
     padding:60px 20px;
     text-align:center;
@@ -66,13 +66,29 @@ header button {
     padding:20px;
     border-radius:15px;
     width:250px;
+    transition:0.3s;
 }
 
+.card:hover {
+    transform:scale(1.05);
+}
+
+/* DOWNLOAD */
 .download {
     padding:60px 20px;
     text-align:center;
 }
 
+button {
+    padding:12px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+    background:#38bdf8;
+    cursor:pointer;
+}
+
+/* FOOTER */
 footer {
     padding:20px;
     text-align:center;
@@ -87,36 +103,48 @@ footer {
 
 <header>
     <h2>🚀 MelOS</h2>
+    <div>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+    </div>
 </header>
 
 <div class="hero">
     <h1>Dein eigenes System</h1>
-    <p>MelOS kombiniert Apps, Server und Lizenzsystem</p>
+    <p>Apps • Server • Lizenzsystem in einem Projekt</p>
+    <div class="btn">Jetzt starten</div>
 </div>
 
-<div class="section">
+<div class="section" id="features">
     <h2>✨ Features</h2>
     <div class="cards">
         <div class="card">🔐 Lizenzsystem</div>
         <div class="card">📱 Mobile Apps</div>
         <div class="card">🌐 Server Backend</div>
+        <div class="card">⚡ Aktivierung</div>
+        <div class="card">🛡️ Sicherheit</div>
+        <div class="card">🚀 Modern</div>
     </div>
 </div>
 
-<div class="download">
+<div class="download" id="download">
     <h2>📥 Download</h2>
 
     <a href="melos_admin.apk">
-        <button>Admin App</button>
+        <button>🔐 Admin App</button>
     </a>
 
     <a href="melos_user.apk">
-        <button>User App</button>
+        <button>📱 User App</button>
     </a>
+
+    <p style="color:#facc15;">
+        ⚠️ Android: Unbekannte Apps erlauben
+    </p>
 </div>
 
 <footer>
-    © 2026 MelOS
+    © 2026 MelOS System
 </footer>
 
 </body>
